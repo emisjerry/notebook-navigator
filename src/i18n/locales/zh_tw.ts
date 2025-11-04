@@ -33,25 +33,25 @@ export const STRINGS_ZH_TW = {
         featureImageAlt: '特色圖片', // 縮圖/預覽圖片的替代文字 (英文: Feature image)
         unknownError: '未知錯誤', // 當錯誤沒有訊息時的通用備用文字 (英文: Unknown error)
         updateBannerTitle: 'Notebook Navigator 有可用更新',
-        updateBannerInstruction: '在設定 → 社群外掛中更新'
+        updateBannerInstruction: '在設定 → 社群外掛中更新',
+        updateIndicatorLabel: '有新版本可用'
     },
 
     // 列表窗格
     listPane: {
         emptyStateNoSelection: '選取一個資料夾或標籤以檢視筆記', // 未選取資料夾或標籤時顯示的訊息 (英文: Select a folder or tag to view notes)
         emptyStateNoNotes: '沒有筆記', // 當資料夾/標籤沒有筆記時顯示的訊息 (英文: No notes)
-        pinnedSection: '📌 已釘選', // 檔案列表頂部釘選筆記區段的標頭 (英文: 📌 Pinned)
+        pinnedSection: '已釘選', // 檔案列表頂部釘選筆記區段的標頭 (英文: Pinned)
         notesSection: '筆記', // 僅顯示文件時，在釘選項目和一般項目之間顯示的標頭 (英文: Notes)
-        filesSection: '檔案' // 顯示支援的或所有檔案時，在釘選項目和一般項目之間顯示的標頭 (英文: Files)
+        filesSection: '檔案', // 顯示支援的或所有檔案時，在釘選項目和一般項目之間顯示的標頭 (英文: Files)
+        hiddenItemAriaLabel: '{name} (已隱藏)' // 用於標示通常被隱藏項目的無障礙標籤
     },
 
     // 標籤列表
     tagList: {
         untaggedLabel: '無標籤', // 顯示無標籤筆記的特殊項目標籤 (英文: Untagged)
-        favoriteTags: '最愛標籤', // 最愛虛擬資料夾的標籤 (英文: Favorite tags)
         hiddenTags: '隱藏標籤', // 隱藏標籤虛擬資料夾的標籤 (英文: Hidden tags)
-        allTags: '標籤', // 當存在最愛標籤時，標籤虛擬資料夾的標籤 (英文: Tags)
-        tags: '標籤' // 當沒有最愛標籤時，標籤虛擬資料夾的標籤 (英文: Tags)
+        tags: '標籤' // 標籤虛擬資料夾的標籤 (英文: Tags)
     },
 
     // 導覽窗格
@@ -59,10 +59,11 @@ export const STRINGS_ZH_TW = {
         shortcutsHeader: '捷徑', // 導覽窗格中捷徑區段的標頭標籤 (英文: Shortcuts)
         recentNotesHeader: '最近筆記', // 導覽窗格中最近筆記區段的標頭標籤 (英文: Recent notes)
         recentFilesHeader: '最近檔案', // 在導覽窗格中顯示最近非筆記檔案時的標頭標籤 (英文: Recent files)
-        reorderRootFoldersTitle: '重新排序根資料夾',
-        reorderRootFoldersHint: '拖曳資料夾以變更順序',
+        reorderRootFoldersTitle: '重新排列導覽區段',
+        reorderRootFoldersHint: '拖曳標題或項目以調整順序',
         vaultRootLabel: '儲存庫',
-        resetRootFolderOrder: '重設為字母順序',
+        resetRootToAlpha: '重設為字母順序',
+        resetRootToFrequency: '重設為頻率排序',
         dragHandleLabel: '拖曳以重新排序',
         pinShortcuts: '釘選捷徑',
         unpinShortcuts: '取消釘選捷徑'
@@ -78,7 +79,8 @@ export const STRINGS_ZH_TW = {
         add: '新增至捷徑',
         remove: '從捷徑移除',
         moveUp: '上移',
-        moveDown: '下移'
+        moveDown: '下移',
+        folderNotesPinned: '已釘選 {count} 個資料夾筆記'
     },
 
     // 窗格標頭
@@ -94,12 +96,12 @@ export const STRINGS_ZH_TW = {
         customSort: '自訂', // 自訂排序模式的標籤 (英文: Custom)
         showFolders: '顯示導覽', // 顯示導覽窗格按鈕的工具提示 (英文: Show navigation)
         hideFolders: '隱藏導覽', // 隱藏導覽窗格按鈕的工具提示 (英文: Hide navigation)
-        reorderRootFolders: '重新排序根資料夾',
-        finishRootFolderReorder: '完成根資料夾重新排序',
+        reorderRootFolders: '重新排列根資料夾和標籤',
+        finishRootFolderReorder: '完成重新排列',
         toggleDescendantNotes: '顯示子資料夾/後代中的筆記', // 工具提示：包含資料夾和標籤的後代
         autoExpandFoldersTags: '自動展開資料夾和標籤', // 選取時自動展開資料夾和標籤的切換按鈕工具提示 (英文: Auto-expand folders and tags)
-        showExcludedItems: '顯示隱藏項目', // 顯示隱藏項目的按鈕工具提示 (英文: Show hidden items)
-        hideExcludedItems: '隱藏隱藏項目', // 隱藏隱藏項目的按鈕工具提示 (英文: Hide hidden items)
+        showExcludedItems: '顯示隱藏的資料夾、標籤和筆記', // 顯示隱藏項目的按鈕工具提示 (英文: Show hidden items)
+        hideExcludedItems: '隱藏隱藏的資料夾、標籤和筆記', // 隱藏隱藏項目的按鈕工具提示 (英文: Hide hidden items)
         showDualPane: '顯示雙窗格', // 顯示雙窗格佈局的按鈕工具提示 (英文: Show dual panes)
         showSinglePane: '顯示單一窗格', // 顯示單一窗格佈局的按鈕工具提示 (英文: Show single pane)
         changeAppearance: '變更外觀', // 變更資料夾外觀設定的按鈕工具提示 (英文: Change appearance)
@@ -145,7 +147,9 @@ export const STRINGS_ZH_TW = {
             revealInFolder: '在資料夾中顯示',
             revealInFinder: '在 Finder 中顯示',
             showInExplorer: '在系統檔案總管中顯示',
-            copyDeepLink: '複製深層連結',
+            copyDeepLink: '複製 Obsidian URL',
+            copyPath: '複製路徑',
+            copyRelativePath: '複製相對路徑',
             renameNote: '重新命名筆記',
             renameFile: '重新命名檔案',
             deleteNote: '刪除筆記',
@@ -174,6 +178,8 @@ export const STRINGS_ZH_TW = {
             changeColor: '變更顏色',
             changeBackground: '變更背景',
             excludeFolder: '隱藏資料夾',
+            unhideFolder: '顯示資料夾',
+            moveFolder: '移動至...',
             renameFolder: '重新命名資料夾',
             deleteFolder: '刪除資料夾'
         },
@@ -181,8 +187,7 @@ export const STRINGS_ZH_TW = {
             changeIcon: '變更圖示',
             changeColor: '變更顏色',
             changeBackground: '變更背景',
-            addToFavorites: '新增至最愛',
-            removeFromFavorites: '從最愛移除',
+            showTag: '顯示標籤',
             hideTag: '隱藏標籤'
         }
     },
@@ -193,9 +198,11 @@ export const STRINGS_ZH_TW = {
         slimPreset: '緊湊 (無日期/預覽/圖片)',
         titleRows: '標題列數',
         previewRows: '預覽列數',
+        groupBy: '分組依據',
         defaultOption: (rows: number) => `預設 (${rows})`,
         defaultTitleOption: (rows: number) => `預設標題列數 (${rows})`,
         defaultPreviewOption: (rows: number) => `預設預覽列數 (${rows})`,
+        defaultGroupOption: (groupLabel: string) => `預設分組 (${groupLabel})`,
         titleRowOption: (rows: number) => `${rows} 標題列`,
         previewRowOption: (rows: number) => `${rows} 預覽列`
     },
@@ -256,6 +263,10 @@ export const STRINGS_ZH_TW = {
             affectedFiles: '受影響的檔案：',
             andMore: '...還有 {count} 個',
             confirmRename: '重新命名標籤',
+            renameUnchanged: '{tag} 未變更',
+            renameNoChanges: '{oldTag} → {newTag} ({countLabel})',
+            invalidTagName: '請輸入有效的標籤名稱。',
+            descendantRenameError: '無法將標籤移動到自身或其子標籤中。',
             confirmDelete: '刪除標籤',
             file: '檔案',
             files: '檔案'
@@ -275,6 +286,10 @@ export const STRINGS_ZH_TW = {
             removeAllTagsTitle: '移除所有標籤',
             removeAllTagsFromNote: '您確定要從此筆記中移除所有標籤嗎？',
             removeAllTagsFromNotes: '您確定要從 {count} 則筆記中移除所有標籤嗎？'
+        },
+        folderNoteType: {
+            title: '選擇資料夾筆記類型',
+            folderLabel: '資料夾：{name}'
         },
         folderSuggest: {
             placeholder: '移動至資料夾...',
@@ -353,14 +368,17 @@ export const STRINGS_ZH_TW = {
             noFileSelected: '未選取檔案'
         },
         notices: {
-            excludedFolder: '已排除資料夾：{name}'
+            hideFolder: '已隱藏資料夾：{name}',
+            showFolder: '已顯示資料夾：{name}'
         },
         notifications: {
             deletedMultipleFiles: '已刪除 {count} 個檔案',
             movedMultipleFiles: '已將 {count} 個檔案移動至 {folder}',
             folderNoteConversionSuccess: '已在「{name}」中將檔案轉換為資料夾筆記',
             folderMoved: '已移動資料夾 "{name}" ',
-            deepLinkCopied: '深層連結已複製到剪貼簿',
+            deepLinkCopied: 'Obsidian URL 已複製到剪貼簿',
+            pathCopied: '路徑已複製到剪貼簿',
+            relativePathCopied: '相對路徑已複製到剪貼簿',
             tagAddedToNote: '已將標籤新增至 1 則筆記',
             tagAddedToNotes: '已將標籤新增至 {count} 則筆記',
             tagRemovedFromNote: '已從 1 則筆記中移除標籤',
@@ -372,8 +390,10 @@ export const STRINGS_ZH_TW = {
             tagOperationsNotAvailable: '標籤操作不可用',
             tagsRequireMarkdown: '僅支援 Markdown 筆記的標籤',
             iconPackDownloaded: '{provider} 已下載',
+            iconPackUpdated: '{provider} 已更新 ({version})',
             iconPackRemoved: '{provider} 已移除',
-            iconPackLoadFailed: '載入 {provider} 失敗'
+            iconPackLoadFailed: '載入 {provider} 失敗',
+            hiddenFileReveal: '檔案已隱藏。啟用「顯示隱藏項目」以顯示它'
         },
         confirmations: {
             deleteMultipleFiles: '您確定要刪除 {count} 個檔案嗎？',
@@ -436,11 +456,16 @@ export const STRINGS_ZH_TW = {
         deleteFile: '刪除檔案', // 指令面板：刪除目前活動的檔案 (英文: Delete file)
         createNewNote: '建立新筆記', // 指令面板：在目前選取的資料夾中建立新筆記 (英文: Create new note)
         moveFiles: '移動檔案', // 指令面板：將選取的檔案移動至另一個資料夾 (英文: Move files)
+        selectNextFile: '選擇下一個檔案', // 指令面板：選取目前檢視中的下一個檔案 (英文: Select next file)
+        selectPreviousFile: '選擇上一個檔案', // 指令面板：選取目前檢視中的上一個檔案 (英文: Select previous file)
         convertToFolderNote: '轉換為資料夾筆記', // 指令面板：將活動檔案轉換為帶有新資料夾的資料夾筆記 (英文: Convert to folder note)
+        pinAllFolderNotes: '固定所有資料夾筆記', // 指令面板：將所有資料夾筆記釘選到捷徑 (英文: Pin all folder notes)
         navigateToFolder: '導覽至資料夾', // 指令面板：使用模糊搜尋導覽至資料夾 (英文: Navigate to folder)
         navigateToTag: '導覽至標籤', // 指令面板：使用模糊搜尋導覽至標籤 (英文: Navigate to tag)
+        addShortcut: '新增至捷徑', // 指令面板：將目前的檔案、資料夾或標籤加入捷徑 (英文: Add to shortcuts)
         toggleDescendants: '切換後代項目', // 指令面板：切換顯示後代中的筆記 (英文: Toggle descendants)
-        toggleHidden: '切換隱藏項目', // 指令面板：切換顯示隱藏項目 (英文: Toggle hidden items)
+        toggleHidden: '切換隱藏的資料夾、標籤和筆記', // 指令面板：切換顯示隱藏項目 (英文: Toggle hidden items)
+        toggleTagSort: '切換標籤排序', // 指令面板：在字母和頻率標籤排序之間切換 (英文: Toggle tag sort order)
         collapseExpand: '收合/展開所有項目', // 指令面板：收合或展開所有資料夾和標籤 (英文: Collapse / expand all items)
         addTag: '為選取檔案新增標籤', // 指令面板：開啟對話框為選取檔案新增標籤 (英文: Add tag to selected files)
         removeTag: '從選取檔案移除標籤', // 指令面板：開啟對話框從選取檔案移除標籤 (英文: Remove tag from selected files)
@@ -485,9 +510,11 @@ export const STRINGS_ZH_TW = {
         },
         groups: {
             general: {
-                view: '外觀',
-                behavior: '行為',
                 filtering: '篩選',
+                behavior: '行為',
+                view: '外觀',
+                desktopAppearance: '桌面外觀',
+                mobileAppearance: '行動裝置外觀',
                 formatting: '格式'
             },
             navigation: {
@@ -535,7 +562,7 @@ export const STRINGS_ZH_TW = {
                 }
             },
             listPaneTitle: {
-                name: '列表窗格標題',
+                name: '列表窗格標題（僅限桌面）',
                 desc: '選擇列表窗格標題的顯示位置。',
                 options: {
                     header: '顯示在標頭',
@@ -559,17 +586,51 @@ export const STRINGS_ZH_TW = {
                 name: '顯示子資料夾/後代中的筆記',
                 desc: '檢視資料夾或標籤時，包含巢狀子資料夾和標籤後代的筆記。'
             },
-            groupByDate: {
-                name: '依日期分組筆記',
-                desc: '依日期排序時，將筆記分組在日期標頭下。'
+            limitPinnedToCurrentFolder: {
+                name: '僅在父資料夾中顯示固定筆記',
+                desc: '固定筆記僅在查看其資料夾時顯示'
+            },
+            separateNoteCounts: {
+                name: '分別顯示當前和後代計數',
+                desc: '在資料夾和標籤中以「當前 ▾ 後代」格式顯示筆記計數。'
+            },
+            groupNotes: {
+                name: '分組筆記',
+                desc: '在依日期或資料夾分組的筆記之間顯示標題。啟用資料夾分組時，標籤檢視使用日期分組。',
+                options: {
+                    none: '不分組',
+                    date: '依日期分組',
+                    folder: '依資料夾分組'
+                }
+            },
+            showPinnedGroupHeader: {
+                name: '顯示釘選群組標題',
+                desc: '在釘選筆記上方顯示分組標題。'
+            },
+            showPinnedIcon: {
+                name: '顯示釘選圖示',
+                desc: '在釘選區段標題旁顯示圖示。'
             },
             optimizeNoteHeight: {
                 name: '最佳化筆記高度',
                 desc: '減少釘選筆記和無預覽文字筆記的高度。'
             },
-            showParentFolderNames: {
-                name: '顯示父資料夾名稱',
+            slimItemHeight: {
+                name: '精簡項目高度',
+                desc: '設定桌面與行動裝置的精簡清單項目高度。',
+                resetTooltip: '恢復預設值 (28px)'
+            },
+            slimItemHeightScaleText: {
+                name: '精簡高度同步縮放文字',
+                desc: '降低精簡清單項目高度時同步調整文字大小。'
+            },
+            showParentFolder: {
+                name: '顯示父資料夾',
                 desc: '在子資料夾或標籤中顯示筆記的父資料夾名稱。'
+            },
+            showParentFolderColor: {
+                name: '顯示父資料夾顏色',
+                desc: '在父資料夾標籤上使用資料夾顏色。'
             },
             showQuickActions: {
                 name: '顯示快速操作 (僅限桌面版)',
@@ -588,8 +649,29 @@ export const STRINGS_ZH_TW = {
                 desc: '快速操作：在新分頁中開啟筆記。'
             },
             dualPane: {
-                name: '雙窗格佈局 (僅限桌面版，不同步)',
+                name: '雙窗格佈局 (不同步)',
                 desc: '在桌面版並排顯示導覽窗格和列表窗格。'
+            },
+            dualPaneOrientation: {
+                name: '雙欄版面方向 (不同步)',
+                desc: '啟用雙欄時選擇水平或垂直版面。',
+                options: {
+                    horizontal: '水平分割',
+                    vertical: '垂直分割'
+                }
+            },
+            appearanceBackground: {
+                name: '背景色',
+                desc: '為導覽窗格和列表窗格選擇背景色。',
+                options: {
+                    separate: '分開背景',
+                    primary: '使用列表背景',
+                    secondary: '使用導覽背景'
+                }
+            },
+            appearanceScale: {
+                name: '縮放等級',
+                desc: '控制 Notebook Navigator 的整體縮放等級。'
             },
             startView: {
                 name: '預設啟動檢視',
@@ -610,6 +692,10 @@ export const STRINGS_ZH_TW = {
             autoSelectFirstFileOnFocusChange: {
                 name: '自動選取第一則筆記 (僅限桌面版)',
                 desc: '切換資料夾或標籤時自動開啟第一則筆記。'
+            },
+            skipAutoScroll: {
+                name: '停用捷徑自動捲動',
+                desc: '點選捷徑中的項目時不捲動導覽面板。'
             },
             autoExpandFoldersTags: {
                 name: '自動展開資料夾和標籤',
@@ -635,8 +721,18 @@ export const STRINGS_ZH_TW = {
                 desc: '要顯示的最近筆記數量。'
             },
             showTooltips: {
-                name: '顯示工具提示 (僅限桌面版)',
+                name: '顯示工具提示',
                 desc: '顯示懸停工具提示，提供筆記和資料夾的額外資訊。'
+            },
+            showTooltipPath: {
+                name: '顯示路徑',
+                desc: '在工具提示中的筆記名稱下方顯示資料夾路徑。'
+            },
+            resetPaneSeparator: {
+                name: '重置面板分隔符位置',
+                desc: '將導覽面板與清單面板之間的可拖動分隔符重置為預設位置。',
+                buttonText: '重置分隔符',
+                notice: '分隔符位置已重置。重新啟動 Obsidian 或重新開啟 Notebook Navigator 以套用。'
             },
             multiSelectModifier: {
                 name: '多重選取修飾鍵',
@@ -681,6 +777,14 @@ export const STRINGS_ZH_TW = {
                 name: '顯示日期',
                 desc: '在筆記名稱下方顯示日期。'
             },
+            alphabeticalDateMode: {
+                name: '按名稱排序時',
+                desc: '筆記按字母順序排序時顯示的日期。',
+                options: {
+                    created: '建立日期',
+                    modified: '修改日期'
+                }
+            },
             showFileTags: {
                 name: '顯示檔案標籤',
                 desc: '在檔案項目中顯示可點擊的標籤。使用標籤顏色來視覺上區分不同類型的標籤。'
@@ -712,7 +816,7 @@ export const STRINGS_ZH_TW = {
                 helpTooltip: '點擊查看格式參考'
             },
             showFilePreview: {
-                name: '顯示筆記預覽 (*)',
+                name: '顯示筆記預覽',
                 desc: '在筆記名稱下方顯示預覽文字。'
             },
             skipHeadingsInPreview: {
@@ -749,8 +853,12 @@ export const STRINGS_ZH_TW = {
                 }
             },
             showFeatureImage: {
-                name: '顯示特色圖片 (*)',
+                name: '顯示特色圖片',
                 desc: '從 frontmatter 顯示縮圖。提示：使用 "Featured Image" 外掛為您的所有文件自動設定特色圖片。'
+            },
+            forceSquareFeatureImage: {
+                name: '強制正方形特色圖片',
+                desc: '將特色圖片渲染為正方形縮圖。'
             },
             featureImageProperties: {
                 name: '圖片屬性',
@@ -765,6 +873,10 @@ export const STRINGS_ZH_TW = {
                 name: '顯示根資料夾',
                 desc: '在樹狀結構中將儲存庫名稱顯示為根資料夾。'
             },
+            showFolderIcons: {
+                name: '顯示資料夾圖示',
+                desc: '在導覽窗格的資料夾旁顯示圖示。'
+            },
             inheritFolderColors: {
                 name: '繼承資料夾顏色',
                 desc: '子資料夾繼承父資料夾的顏色。'
@@ -773,9 +885,9 @@ export const STRINGS_ZH_TW = {
                 name: '顯示筆記數量',
                 desc: '在每個資料夾和標籤旁邊顯示筆記數量。'
             },
-            showIcons: {
-                name: '顯示圖示',
-                desc: '顯示資料夾、標籤和筆記的圖示。'
+            showSectionIcons: {
+                name: '顯示捷徑圖示',
+                desc: '顯示導覽區段（如捷徑和最近檔案）的圖示。'
             },
             showIconsColorOnly: {
                 name: '僅對圖示套用顏色',
@@ -806,17 +918,27 @@ export const STRINGS_ZH_TW = {
                 name: '隨項目高度縮放文字',
                 desc: '減少項目高度時，縮小導覽文字大小。'
             },
+            navRootSpacing: {
+                name: '根層項目間距',
+                desc: '根層資料夾與標籤之間的間距。'
+            },
             showTags: {
-                name: '顯示標籤 (*)',
+                name: '顯示標籤',
                 desc: '在導覽器中資料夾下方顯示標籤區段。'
             },
-            showTagsAboveFolders: {
-                name: '在資料夾上方顯示標籤',
-                desc: '在導覽器中資料夾之前顯示標籤區段。'
+            showTagIcons: {
+                name: '顯示標籤圖示',
+                desc: '在導覽窗格的標籤旁顯示圖示。'
             },
-            showFavoriteTagsFolder: {
-                name: '顯示最愛標籤資料夾',
-                desc: '設定最愛標籤後，將「最愛標籤」顯示為可收合的資料夾。'
+            tagSortOrder: {
+                name: '標籤排序方式',
+                desc: '選擇導覽窗格中的標籤排序順序。',
+                options: {
+                    alphaAsc: 'A 到 Z',
+                    alphaDesc: 'Z 到 A',
+                    frequencyAsc: '頻率（由低至高）',
+                    frequencyDesc: '頻率（由高至低）'
+                }
             },
             showAllTagsFolder: {
                 name: '顯示標籤資料夾',
@@ -826,14 +948,9 @@ export const STRINGS_ZH_TW = {
                 name: '顯示無標籤筆記',
                 desc: '為沒有任何標籤的筆記顯示 "無標籤" 項目。'
             },
-            showUntaggedInFavorites: {
-                name: '在最愛標籤區段顯示無標籤筆記',
-                desc: '在最愛標籤區段顯示無標籤筆記，可置於資料夾內或直接在最愛標籤下方。'
-            },
-            favoriteTags: {
-                name: '最愛標籤',
-                desc: '以逗號分隔的標籤前綴清單。新增一個標籤會包含其所有子標籤 (例如 "photo" 包含 "photo/camera/fuji")。',
-                placeholder: 'inbox, projects/work, daily/2025'
+            keepEmptyTagsProperty: {
+                name: '刪除最後一個標籤後保留 tags 屬性',
+                desc: '當所有標籤被刪除時保留 frontmatter 中的 tags 屬性。停用時,tags 屬性將從 frontmatter 中刪除。'
             },
             hiddenTags: {
                 name: '隱藏標籤',
@@ -848,6 +965,7 @@ export const STRINGS_ZH_TW = {
                 name: '預設資料夾筆記類型',
                 desc: '從右鍵選單建立的資料夾筆記類型。',
                 options: {
+                    ask: '建立時詢問',
                     markdown: 'Markdown',
                     canvas: '畫布',
                     base: 'Base'
@@ -860,12 +978,16 @@ export const STRINGS_ZH_TW = {
             },
             folderNoteProperties: {
                 name: '資料夾筆記屬性',
-                desc: '新增至新建立資料夾筆記的 frontmatter 屬性 (以逗號分隔)。',
-                placeholder: 'foldernote, darktheme'
+                desc: '新增至新資料夾筆記的YAML前言。--- 標記會自動新增。',
+                placeholder: 'theme: dark\nfoldernote: true'
             },
             hideFolderNoteInList: {
                 name: '在清單中隱藏資料夾筆記',
                 desc: '隱藏資料夾筆記，使其不顯示在資料夾的筆記清單中。'
+            },
+            pinCreatedFolderNote: {
+                name: '固定建立的資料夾筆記',
+                desc: '從右鍵選單建立資料夾筆記時自動固定。'
             },
             confirmBeforeDelete: {
                 name: '刪除前確認',
@@ -912,7 +1034,7 @@ export const STRINGS_ZH_TW = {
                     '下載的圖示包會在裝置間同步安裝狀態。圖示包保留在每個裝置的本地資料庫中；同步僅追蹤是下載還是移除它們。圖示包從 Notebook Navigator 儲存庫下載 (https://github.com/johansan/notebook-navigator/tree/main/icon-assets)。',
                 providers: {
                     bootstrapIconsDesc: 'https://icons.getbootstrap.com/',
-                    fontAwesomeDesc: 'https://fontawesome.com/v6/search?f=classic&s=solid&ic=free&o=r',
+                    fontAwesomeDesc: 'https://fontawesome.com/',
                     materialIconsDesc: 'https://fonts.google.com/icons',
                     phosphorDesc: 'https://phosphoricons.com/',
                     rpgAwesomeDesc: 'https://nagoshiashumari.github.io/Rpg-Awesome/',
@@ -920,7 +1042,7 @@ export const STRINGS_ZH_TW = {
                 }
             },
             useFrontmatterDates: {
-                name: '從 frontmatter 讀取中繼資料 (*)',
+                name: '從 frontmatter 讀取中繼資料',
                 desc: '可用時從 frontmatter 讀取筆記名稱、時間戳、圖示和顏色，否則退回至檔案系統值或設定'
             },
             frontmatterNameField: {
@@ -942,29 +1064,9 @@ export const STRINGS_ZH_TW = {
                 name: '將圖示和顏色儲存至 frontmatter',
                 desc: '使用上方設定的欄位自動將檔案圖示和顏色寫入 frontmatter。'
             },
-            frontmatterMigration: {
-                name: '從設定移轉圖示和顏色',
-                desc: '儲存在設定中：{icons} 個圖示、{colors} 種顏色。',
-                button: '移轉',
-                buttonWorking: '移轉中...',
-                noticeNone: '設定中未儲存任何檔案圖示或顏色。',
-                noticeDone: '已移轉 {migratedIcons}/{icons} 個圖示、{migratedColors}/{colors} 種顏色。',
-                noticeFailures: '失敗的項目：{failures}。',
-                noticeError: '移轉失敗。請檢查主控台以取得詳細資訊。'
-            },
-            frontmatterIconField: {
-                name: '圖示欄位',
-                desc: '檔案圖示的 frontmatter 欄位。留空以使用儲存在設定中的圖示。',
-                placeholder: 'icon'
-            },
-            frontmatterColorField: {
-                name: '顏色欄位',
-                desc: '檔案顏色的 frontmatter 欄位。留空以使用儲存在設定中的顏色。',
-                placeholder: 'color'
-            },
-            frontmatterSaveMetadata: {
-                name: '將圖示和顏色儲存至 frontmatter',
-                desc: '使用上方設定的欄位自動將檔案圖示和顏色寫入 frontmatter。'
+            frontmatterIconizeFormat: {
+                name: '以 Iconize 格式儲存',
+                desc: '使用 Iconize 格式（例如 LiHome, FasUser, SiGithub）儲存圖示，而不是外掛格式（例如 home, fontawesome-solid:user, simple-icons:github）。'
             },
             frontmatterMigration: {
                 name: '從設定移轉圖示和顏色',
@@ -1004,12 +1106,12 @@ export const STRINGS_ZH_TW = {
                 status: '已有新版本: {version}'
             },
             whatsNew: {
-                name: '最新消息',
+                name: 'Notebook Navigator {version} 的最新消息',
                 desc: '查看最近的更新和改進',
                 buttonText: '查看最近更新'
             },
             cacheStatistics: {
-                localCache: '(*) 本地快取',
+                localCache: '本地快取',
                 items: '項目',
                 withTags: '帶有標籤',
                 withPreviewText: '帶有預覽文字',
